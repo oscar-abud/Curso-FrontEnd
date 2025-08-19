@@ -1,4 +1,11 @@
 /* comando para comentar 'ctrl + k + c' */
+
+/* root sirve para guardar datos en variables */
+:root{ 
+    --color-white: #eee;
+    --color-black: #1a1a1a;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +13,7 @@
 }
 
 body{
-    background-color: #1a1a1a;
-    color: #ccc;
+    background-color: var(--color-black);
+    color: var(--color-white);
     font-family: sans-serif;
 }

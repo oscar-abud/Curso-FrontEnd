@@ -4,6 +4,7 @@
 :root{ 
     --color-white: #eee;
     --color-black: #1a1a1a;
+    --color-green: rgb(13, 137, 13);
 }
 
 *{
@@ -16,4 +17,48 @@ body{
     background-color: var(--color-black);
     color: var(--color-white);
     font-family: sans-serif;
+    height: 100dvh;
+}
+
+header{
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+}
+
+header, a, li{
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    display: flex;
+    align-items: center;
+    transition: ease .3s;
+    font-weight: 800;
+}
+
+header a:hover{
+    color: var(--color-black);
+}
+
+header{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1{
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+nav{
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
 }

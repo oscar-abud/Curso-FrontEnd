@@ -12,13 +12,11 @@ $('#btnSaludar').addEventListener('click', () => {
     const nombre = $('#nombre').value.trim();
     const edad = Number($('#edad').value);
 
-    if(!nombre)
-    {
+    if (!nombre) {
         outSaludo.textContent = ' Debe ingresar un nombre \u26A0\uFE0F';
         return;
     }
-    if(Number.isNaN(edad) || edad <=0)
-    {
+    if (Number.isNaN(edad) || edad <= 0) {
         outSaludo.textContent = 'Edad inválida \u26A0\uFE0F';
         return;
     }
@@ -31,19 +29,19 @@ $('#btnSaludar').addEventListener('click', () => {
 
 $('#btnAgregar').addEventListener(
     'click', () => {
-        const texto = $('#txtItem').value.trim();
-        if(!texto) return;
-        
-        const li = document.createElement('li');
-        li.textContent = texto;
+        const texto = $('#txtItem').value.trim(); // Camputramos el campo el campo del input
+        if (!texto) return; // Si el campo está vacío, no hacemos nada
 
-        const del = document.createElement('button');
-        del.textContent = 'Eliminar';
-        del.className = 'pill';
+        const li = document.createElement('li'); // Creamos un elemento li
+        li.textContent = texto; // Le asignamos el texto del input
 
-        del.dataset.action = 'eliminar';
+        const del = document.createElement('button'); // Creamos un botón para eliminar el elemento
+        del.textContent = 'Eliminar'; // Le asignamos el texto "Eliminar"
+        del.className = 'pill'; // Le asignamos la clase "pill"
 
-        del.addEventListener('click',() => { li.remove()});
+        del.dataset.action = 'eliminar'; // Le asignamos un atributo data-action con el valor "eliminar"
+
+        del.addEventListener('click', () => { li.remove() });
 
         li.appendChild(del);
         $('#lista').appendChild(li);

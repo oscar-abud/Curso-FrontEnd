@@ -41,12 +41,12 @@ $('#btnAgregar').addEventListener(
 
         del.dataset.action = 'eliminar'; // Le asignamos un atributo data-action con el valor "eliminar"
 
-        del.addEventListener('click', () => { li.remove() });
+        del.addEventListener('click', () => li.remove()); // Se elimina el <li> al hacer click en el botón
 
-        li.appendChild(del);
+        li.appendChild(del); // Añadimos el botón al elemento li (ESTO ES CLAVE PARA ENTENDER PORQUE SE ELIMINA SOLO UN <li>)
         $('#lista').appendChild(li);
 
         $('#txtItem').value = '';
-        $('#txtItem').focus();
+        $('#txtItem').focus(); // Devolvemos el foco al input
     }
 );

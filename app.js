@@ -51,7 +51,8 @@ $('#btnAgregar').addEventListener('click', () => {
 );
 
 $('#panel').addEventListener('click', (event) => {
-    // lo que hace el closest es buscar al elemento mas cercano
+    // El método .closest() en JavaScript se utiliza para buscar el elemento más cercano
+    // Y el parametro event captura todo evento del js que le indicas, en este caso es el button[data-action]
     const btn = event.target.closest('button[data-action]')
     
     if(!btn) return

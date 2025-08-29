@@ -22,13 +22,12 @@ $('#btnSaludar').addEventListener('click', () => {
     }
 
     const estado = edad >= 18 ? 'mayor de edad' : 'menor de edad';
-    outSaludo.textContent = `Hola, ${nombre}. Tienes ${edad} años y eres ${estado}`;
+    outSaludo.textContent = `Hola, ${nombre}. Tienes ${edad} años y eres ${estado}.`;
 
 }
 )
 
-$('#btnAgregar').addEventListener(
-    'click', () => {
+$('#btnAgregar').addEventListener('click', () => {
         const texto = $('#txtItem').value.trim(); // Camputramos el campo el campo del input
         if (!texto) return; // Si el campo está vacío, no hacemos nada
 

@@ -78,7 +78,7 @@
       padding: .75rem;
       overflow: auto;
     }
-    
+
     .pill {
       display: inline-block;
       padding: .2rem .5rem;
@@ -136,6 +136,18 @@
         </div>
       </div>
       <ul id="lista"></ul>
+    </section>
+
+    <section>
+      <h2>Manejo de eventos action</h2>
+      <p><button id="btnContador"></button></p>
+      <div id="panel">
+        <button class="pill" data-action="info">Info</button>
+        <button class="pill" data-action="ok">Ok</button>
+        <button class="pill" data-action="warn">Warning</button>
+        <button class="pill" data-action="error">Error</button>
+      </div>
+      <pre id="outEventos"></pre>
     </section>
   </main>
 

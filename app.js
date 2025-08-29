@@ -49,3 +49,30 @@ $('#btnAgregar').addEventListener('click', () => {
         $('#txtItem').focus(); // Devolvemos el foco al input
     }
 );
+
+$('#panel').addEventListener('click', (event) => {
+    // lo que hace el closest es buscar al elemento mas cercano
+    const btn = event.target.closest('button[data-action]')
+    
+    if(!btn) return
+
+    const action = btn.dataset.action
+    switch(action){
+        case 'info':
+            outEventos.textContent = "Información"
+            break
+        case 'ok':
+            outEventos.textContent = "Ok"
+            break
+        case 'warn':
+            outEventos.textContent = "Warning!!!"
+            break
+        case 'error':
+            outEventos.textContent = "Error!!!"
+            break
+        case 'eliminar':
+            const li = btn.closest('li')
+            if(li) li.remove()
+            break
+    }
+})

@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>LOGO</h1>
+            <h1>Colun</h1>
             <nav>
                 <ul>
                     <a href="index.html">Inicio</a>
@@ -18,33 +18,75 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <div class="containerTables">
-                <div class="containerPors">
-                    <strong>Porcentajes</strong>
-                    <p>%</p>
-                    <h1>Producción</h1>
-                    <progress value="50" max="100" min="0"></progress>
-                    <h1>Producción</h1>
-                    <progress value="50" max="100" min="0"></progress>
-                    <h1>Producción</h1>
-                    <progress value="50" max="100" min="0"></progress>
-                </div>
-                <div class="containerProducDay">
-                    <div class="containerProductMonth-left">
-                        left
-                    </div>
-                    <div class="containerProductMonth-right">
-                        right
-                    </div>
-                </div>
-                <div class="containerProducMonth">
-                    
-                </div>
+    <main>
+      <div class="containerTables">
 
-            </div>
-        </main>
-        <footer id="footer">footer</footer>
+        <!-- ====== Valores ====== -->
+        <div class="containerPors">
+          <h1>Valores</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Indicador</th>
+                <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Producción</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-fill" style="width: 75%;"></div>
+                  </div>
+                  <span>75%</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Fertilidad</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-fill" style="width: 50%;"></div>
+                  </div>
+                  <span>50%</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Salud</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-fill" style="width: 90%;"></div>
+                  </div>
+                  <span>90%</span>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+
+        
+        <!-- ====== Producción mensual ====== -->
+        <div class="containerProduct">
+            <div class="containerProducDay">
+                <div class="info">
+                    <h1>Producción diaria</h1>
+                    <p>Cantidad: <strong>25 L</strong></p>
+                </div>
+                <!-- ====== Producción diaria ====== -->
+             </div>
+             <div class="containerProducMonth">
+                <div class="info">
+                    <h1>Producción mensual</h1>
+                    <p>Total: <strong>750 L</strong></p>
+                </div>
+             </div>
+
+         </div>
+
+      </div>
+    </main>
+        <footer id="footer">
+            <h1>Toda la magia del sur</h1>
+        </footer>
     </div>
     
 </body>

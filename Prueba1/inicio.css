@@ -1,0 +1,27 @@
+.containerPors{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.containerPors h1{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+/* containerProducDay */
+.containerProducDay{
+    display: flex;
+    width: 100%;
+}
+
+.containerProductMonth-left{
+    width: 50%;
+    text-align: center;
+}
+
+.containerProductMonth-right{
+    width: 50%;
+    text-align: center;
+}

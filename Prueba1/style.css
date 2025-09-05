@@ -55,7 +55,8 @@ nav ul a{
     color: var(--white-color);
     opacity: .7;
     transition: ease-in-out .2s;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 700;
     &:hover{
         opacity: 1;
     }
@@ -69,6 +70,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 0px 8%;
+    margin: 20px 0px;
 }
 
 /* FOOTER */

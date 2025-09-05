@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form.css">
+    <script src="main.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -20,30 +21,41 @@
             </nav>
         </header>
         <main>
-            <form>
+            <form id="form">
+                <strong style="color: #b2acac; font-size: 1rem;">El * significa obligatorio</strong>
                 <div class="containerForm">
-                    <label>DIIO:</label>
-                    <input type="text" placeholder="solo numeros">
+                    <label>* DIIO:</label>
+                    <input type="text" placeholder="Solo números" id="diio">
+                    <p id="outDiio"></p>
                 </div>
                 <div class="containerForm">
-                    <label>Nombre:</label>
-                    <input type="text" placeholder="Nombre de la vaca">
+                    <label>* Fecha de Nacimiento:</label>
+                    <input id="date" type="date" placeholder="Nombre de la vaca">
+                    <p id="outDate"></p>
                 </div>
                 <div class="containerForm">
-                    <label>DIIO:</label>
-                    <input type="text" placeholder="solo numeros">
+                    <label>* Género:</label>
+                    <select style="padding: 5px;" id="genre">
+                        <option value="genre">Seleccione género</option>
+                        <option value="m">Macho</option>
+                        <option value="h">Hembra</option>
+                    </select>
+                    <p id="outGenre"></p>
                 </div>
                 <div class="containerForm">
-                    <label>DIIO:</label>
-                    <input type="text" placeholder="solo numeros">
+                    <label>* Raza:</label>
+                    <input id="race" type="text" placeholder="Ingrese la raza de la vaca">
+                    <p id="outRace"></p>
                 </div>
                 <div class="containerForm">
-                    <label>DIIO:</label>
-                    <input type="text" placeholder="solo numeros">
+                    <label>* Ubicación:</label>
+                    <input id="location" type="text" placeholder="Ingrese ubicación de la vaca">
+                    <p id="outLoca"></p>
                 </div>
                 <div class="containerForm">
-                    <label>DIIO:</label>
-                    <input type="text" placeholder="solo numeros">
+                    <label>Enfermedades:</label>
+                    <strong style="font-size: 1rem; color: #b2acac;">Máx. 150 carácteres</strong>
+                    <textarea id="enfermedades" maxlength="150"></textarea>
                 </div>
                 <button type="submit">Crear vaca</button>
             </form>

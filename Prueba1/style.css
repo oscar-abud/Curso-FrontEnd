@@ -59,7 +59,13 @@ nav ul a{
     font-weight: 700;
     &:hover{
         opacity: 1;
+        text-decoration: underline 3px solid var(--white-color);
     }
+}
+
+.active{
+    opacity: 1;
+    text-decoration: underline 3px solid var(--white-color);
 }
 
 /* MAIN */

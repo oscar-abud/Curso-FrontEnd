@@ -28,11 +28,23 @@ form{
 .containerForm input{
     width: 100%;
     padding: 7px 10px;
+    border: 2px solid var(--gray-color);
+    border-radius: 4px;
+}
+
+.containerForm label{
+    color: var(--blue-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.containerForm p{
+    margin: 0px;
 }
 
 form button{
     color: var(--white-color);
-    background-color: var(--green-color);
+    background-color: var(--lima-green);
     padding: 7px;
     width: 55%;
     border: none;
@@ -43,4 +55,14 @@ form button{
     &:hover{
         opacity: 1;
     }
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    padding: 7px 10px;
+    border: 2px solid var(--gray-color);
+    border-radius: 4px;
 }

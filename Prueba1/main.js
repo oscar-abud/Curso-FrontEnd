@@ -19,16 +19,24 @@ window.onload = () => {
         const race = $('#race').value.trim()
         const location = $('#location').value.trim()
 
+        textDiio.textContent = '';
+        textDate.textContent = '';
+        textGenre.textContent = '';
+        textRace.textContent = '';
+        textLoca.textContent = '';
         // Variable aux
         let state = false
+        // Variable para verificar el genero
+        const validGenre = ['m', 'h']
 
         textDiio.textContent = diio && !Number.isNaN(diio) ? '' : (Number.isNaN(diio) ? 'Ingrese solo números! ⚠️' : 'Ingrese el DIIO! ⚠️')
-        textDate.textContent = date ? '' : "Ingrese una fecha! ⚠️"
-        textGenre.textContent = genre !== "genre" ? '' : "Ingrese el género ⚠️"
-        textRace.textContent = race ? '' : "Ingrese la raza!⚠️"
-        textLoca.textContent = location ? '' : "Ingrese una ubicación!⚠️"
 
-        state = diio && date && genre && race && location
+        if(!date) textDate.textContent = "Ingrese una fecha! ⚠️"
+        if(!validGenre.includes(genre)) textGenre.textContent = "Ingrese el género ⚠️"
+        if(!race) textRace.textContent = "Ingrese la raza!⚠️"
+        if(!location) textLoca.textContent = "Ingrese una ubicación!⚠️"
+
+        state = diio && date && validGenre.includes(genre) && race && location
 
         if(!state) return
         

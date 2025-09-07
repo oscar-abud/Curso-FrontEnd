@@ -30,7 +30,8 @@ form {
   gap: 0.5rem;
 }
 
-.containerForm input {
+.containerForm input,
+.containerForm select {
   width: 100%;
   padding: 7px 10px;
   border: 2px solid var(--gray-color);

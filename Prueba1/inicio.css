@@ -1,25 +1,53 @@
 .containerTables {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-@media (max-width: 1100px) {
-    .containerTables{
-        grid-template-columns: 2fr;
-    }
+/* CONTENEDOR DEL REPORTE */
+.containerReport {
+  margin: 20px 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+}
 
-    main{
-        padding: 0 5%;
-    }
+.title {
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--blue-color);
+  text-align: center;
+}
+.btnReport {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 7px;
+  cursor: pointer;
+  transition: ease 0.3s;
+  &:hover {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+  }
+}
+
+@media (max-width: 900px) {
+  .containerTables {
+    grid-template-columns: 2fr;
+  }
+
+  main {
+    padding: 0 5%;
+  }
 }
 
 /* ====== TARJETAS ====== */
-.containerPors, .containerProduct{
+.containerPors,
+.containerProduct {
   background: var(--white-color);
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0px 5px 8px rgba(0,0,0,0.25);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.25);
 }
 
 .containerTables h1 {
@@ -70,10 +98,10 @@
 
 /* ====== CONTENEDOR PRODUCCIÓN ====== */
 
-.containerProduct{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    align-items: center;
+.containerProduct {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
 }
 
 /* ====== PRODUCCIÓN DIARIA ====== */
@@ -85,7 +113,6 @@
 
 .containerProducDay .info {
   font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .containerProducDay img {
@@ -99,10 +126,3 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.containerProducMonth img {
-  max-width: 150px;
-  border-radius: 50%;
-  border: 1px solid var(--lima-green);
-}
-

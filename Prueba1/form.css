@@ -1,68 +1,73 @@
-form{
-    min-height: 350px;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    max-width: 700px;
-    margin: 0 auto;
-    justify-content: space-around;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
-    padding: 5px 8%;
-    align-items: center;
+.title {
+  font-size: 3rem;
+  color: var(--blue-color);
 }
 
-.containerForm{
-    width: 80%;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: left;
-    align-items: flex-start;
-    justify-content: space-around;
-    gap: .5rem;
+form {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 700px;
+  margin: 30px auto;
+  justify-content: space-around;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+  padding: 5px 8%;
+  align-items: center;
 }
 
-.containerForm input{
-    width: 100%;
-    padding: 7px 10px;
-    border: 2px solid var(--gray-color);
-    border-radius: 4px;
+.containerForm {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 0.5rem;
 }
 
-.containerForm label{
-    color: var(--blue-color);
-    font-size: 1.2rem;
-    font-weight: 700;
+.containerForm input {
+  width: 100%;
+  padding: 7px 10px;
+  border: 2px solid var(--gray-color);
+  border-radius: 4px;
 }
 
-.containerForm p{
-    margin: 0px;
+.containerForm label {
+  color: var(--blue-color);
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
-form button{
-    color: var(--white-color);
-    background-color: var(--lima-green);
-    padding: 7px;
-    width: 55%;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    opacity: .7;
-    margin: 1rem 0;
-    &:hover{
-        opacity: 1;
-    }
+.containerForm p {
+  margin: 0px;
 }
 
-textarea{
-    resize: none;
-    width: 100%;
-    height: 100px;
-    text-align: left;
-    padding: 7px 10px;
-    border: 2px solid var(--gray-color);
-    border-radius: 4px;
+form button {
+  color: var(--white-color);
+  background-color: var(--lima-green);
+  padding: 7px;
+  width: 55%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.7;
+  margin: 1rem 0;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  text-align: left;
+  padding: 7px 10px;
+  border: 2px solid var(--gray-color);
+  border-radius: 4px;
 }

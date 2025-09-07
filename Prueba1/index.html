@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="inicio.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="inicio.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>Colun</h1>
-            <nav>
-                <ul>
-                    <a class="active" href="index.html">Inicio</a>
-                    <a href="formulario.html">Crear vacas</a>
-                </ul>
-            </nav>
-        </header>
-    <main>
-      <div class="containerTables">
+      <header>
+        <img src="img/logo-header.png" />
+        <nav>
+          <ul>
+            <a class="active" href="index.html">Inicio</a>
+            <a href="formulario.html">Crear vacas</a>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="containerReport">
+          <h1 class="title">Reporte</h1>
+          <button class="btnReport">Descargar reporte</button>
+        </div>
+        <div class="containerTables">
+          <!-- ====== Valores ====== -->
+          <div class="containerPors">
+            <h1>Valores</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th>Indicador</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Producción</td>
+                  <td>
+                    <div class="progress">
+                      <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                    <span>75%</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Fertilidad</td>
+                  <td>
+                    <div class="progress">
+                      <div class="progress-fill" style="width: 50%"></div>
+                    </div>
+                    <span>50%</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Salud</td>
+                  <td>
+                    <div class="progress">
+                      <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                    <span>90%</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-        <!-- ====== Valores ====== -->
-        <div class="containerPors">
-          <h1>Valores</h1>
-          <table>
-            <thead>
-              <tr>
-                <th>Indicador</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Producción</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-fill" style="width: 75%;"></div>
-                  </div>
-                  <span>75%</span>
-                </td>
-              </tr>
-              <tr>
-                <td>Fertilidad</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-fill" style="width: 50%;"></div>
-                  </div>
-                  <span>50%</span>
-                </td>
-              </tr>
-              <tr>
-                <td>Salud</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-fill" style="width: 90%;"></div>
-                  </div>
-                  <span>90%</span>
-                </td>
-              </tr>
-            </tbody>
-        </table>
-    </div>
-
-        
-        <!-- ====== Producción mensual ====== -->
-        <div class="containerProduct">
+          <!-- ====== Producción mensual ====== -->
+          <div class="containerProduct">
             <div class="containerProducDay">
-                <div class="info">
-                    <h1>Producción diaria</h1>
-                    <p>Cantidad: <strong>25 L</strong></p>
-                </div>
-                <!-- ====== Producción diaria ====== -->
-             </div>
-             <div class="containerProducMonth">
-                <div class="info">
-                    <h1>Producción mensual</h1>
-                    <p>Total: <strong>750 L</strong></p>
-                </div>
-             </div>
-
-         </div>
-
-      </div>
-    </main>
-        <footer id="footer">
-            <h1>Toda la magia del sur</h1>
-        </footer>
+              <div class="info">
+                <h1>Producción diaria</h1>
+                <p>Cantidad: <strong>25 L</strong></p>
+              </div>
+              <!-- ====== Producción diaria ====== -->
+            </div>
+            <div class="containerProducMonth">
+              <div class="info">
+                <h1>Producción mensual</h1>
+                <p>Total: <strong>750 L</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="containerFooter">
+          <img src="img/logo-footer.png" alt="imagen-footer" />
+          <h1>Toda la magia del sur</h1>
+        </div>
+      </footer>
     </div>
-    
-</body>
+  </body>
 </html>

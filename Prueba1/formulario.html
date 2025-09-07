@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="form.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
     <script src="main.js"></script>
     <title>Document</title>
-</head>
-<body>
-        <div class="container">
-            <!-- HEADER -->
-        <header>
-            <h1>Colun</h1>
-            <nav>
-                <ul>
-                    <a href="index.html">Inicio</a>
-                    <a class="active" href="formulario.html">Crear vacas</a>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <form id="form">
-                <strong style="color: #b2acac; font-size: 1rem;">El * significa obligatorio</strong>
-                <div class="containerForm">
-                    <label>* DIIO:</label>
-                    <input type="text" placeholder="Solo números" id="diio">
-                    <p id="outDiio"></p>
-                </div>
-                <div class="containerForm">
-                    <label>* Fecha de Nacimiento:</label>
-                    <input id="date" type="date" placeholder="Nombre de la vaca">
-                    <p id="outDate"></p>
-                </div>
-                <div class="containerForm">
-                    <label>* Género:</label>
-                    <select style="padding: 5px;" id="genre">
-                        <option value="genre">Seleccione género</option>
-                        <option value="m">Macho</option>
-                        <option value="h">Hembra</option>
-                    </select>
-                    <p id="outGenre"></p>
-                </div>
-                <div class="containerForm">
-                    <label>* Raza:</label>
-                    <input id="race" type="text" placeholder="Ingrese la raza de la vaca">
-                    <p id="outRace"></p>
-                </div>
-                <div class="containerForm">
-                    <label>* Ubicación:</label>
-                    <input id="location" type="text" placeholder="Ingrese ubicación de la vaca">
-                    <p id="outLoca"></p>
-                </div>
-                <div class="containerForm">
-                    <label>Enfermedades:</label>
-                    <strong style="font-size: 1rem; color: #b2acac;">Máx. 150 carácteres</strong>
-                    <textarea id="enfermedades" maxlength="150"></textarea>
-                </div>
-                <button type="submit">Crear vaca</button>
-            </form>
-        </main>
-        <footer id="footer">
-            <h1>Toda la magia del sur</h1>
-        </footer>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <img src="img/logo-header.png" />
+        <nav>
+          <ul>
+            <a href="index.html">Inicio</a>
+            <a class="active" href="formulario.html">Crear vacas</a>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1 class="title">Registrando Vaca</h1>
+        <form id="form">
+          <strong style="color: #b2acac; font-size: 1rem"
+            >El * significa obligatorio</strong
+          >
+          <div class="containerForm">
+            <label>* DIIO:</label>
+            <input type="text" placeholder="Solo números" id="diio" />
+            <p id="outDiio"></p>
+          </div>
+          <div class="containerForm">
+            <label>* Fecha de Nacimiento:</label>
+            <input id="date" type="date" placeholder="Nombre de la vaca" />
+            <p id="outDate"></p>
+          </div>
+          <div class="containerForm">
+            <label>* Género:</label>
+            <select style="padding: 5px" id="genre">
+              <option value="genre">Seleccione género</option>
+              <option value="m">Macho</option>
+              <option value="h">Hembra</option>
+            </select>
+            <p id="outGenre"></p>
+          </div>
+          <div class="containerForm">
+            <label>* Raza:</label>
+            <input
+              id="race"
+              type="text"
+              placeholder="Ingrese la raza de la vaca"
+            />
+            <p id="outRace"></p>
+          </div>
+          <div class="containerForm">
+            <label>* Ubicación:</label>
+            <input
+              id="location"
+              type="text"
+              placeholder="Ingrese ubicación de la vaca"
+            />
+            <p id="outLoca"></p>
+          </div>
+          <div class="containerForm">
+            <label>Enfermedades:</label>
+            <strong style="font-size: 1rem; color: #b2acac"
+              >Máx. 150 carácteres</strong
+            >
+            <textarea id="enfermedades" maxlength="150"></textarea>
+          </div>
+          <button type="submit">Crear vaca</button>
+        </form>
+      </main>
+      <footer id="footer">
+        <div class="containerFooter">
+          <img src="img/logo-footer.png" alt="imagen-footer" />
+          <h1>Toda la magia del sur</h1>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

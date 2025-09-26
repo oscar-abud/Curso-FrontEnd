@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar.jsx'
 import Products from './components/Products.jsx'
+import ContactForm  from './components/contactForm.jsx'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navbar/>
       <Products/>
+      <ContactForm />
     </>
   )
 }

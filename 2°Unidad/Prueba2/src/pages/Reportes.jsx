@@ -1,11 +1,16 @@
-import React from "react";
 import "./pages.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import DataTable from "../components/DataTable";
+
 function Reportes() {
   return (
-    <div className="container">
+    <div id="container" className="container-xll">
       <Header />
-      <div>Reportes</div>
+      <main className="container-sm">
+        <DataTable />
+      </main>
+      <Footer />
     </div>
   );
 }

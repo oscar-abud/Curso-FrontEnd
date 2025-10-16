@@ -7,7 +7,7 @@ const NavLinks = ({ onNavigate }) => {
   const { pathname } = useLocation();
   const links = [
     { to: "/", label: "Inicio" },
-    { to: "/page2", label: "Crear Vaca" },
+    { to: "/crear", label: "Crear Vaca" },
     { to: "/reportes", label: "Reportes" },
   ];
   const isActive = (to) =>

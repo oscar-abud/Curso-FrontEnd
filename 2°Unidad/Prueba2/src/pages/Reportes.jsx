@@ -7,7 +7,7 @@ function Reportes() {
   return (
     <div id="container" className="container-xll">
       <Header />
-      <main className="container-sm">
+      <main className="container-sm my-5">
         <DataTable />
       </main>
       <Footer />

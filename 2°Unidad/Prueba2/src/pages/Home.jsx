@@ -5,9 +5,16 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <div className="container">
+    <div id="container" className="container-xll">
       <Header />
-      <h1>HOME</h1>
+      <main
+        className="container-sm my-5 text-center"
+        style={{ height: "60vh" }}
+      >
+        <h1>
+          Bienvenido <strong>administrador</strong>!
+        </h1>
+      </main>
       <Footer />
     </div>
   );

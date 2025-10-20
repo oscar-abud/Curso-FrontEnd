@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function RegisterCow() {
-  const [diio, setDiio] = useState("");
+  const [diio, setDiio] = useState("");// EL Diio de este useState sirve para mostrar por pantalla la vaca guardada
   const [values, setValues] = useState({
     diio: "",
     date: "",

@@ -16,7 +16,7 @@ function Home() {
         <h1>
           Bienvenido <strong>administrador</strong>!
         </h1>
-        <div className="container">
+        <div className="container-home">
           <div>Menu con filtros</div>
           <div className="contenedorVacas">
             <Cows />

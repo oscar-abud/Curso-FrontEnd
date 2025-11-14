@@ -3,6 +3,7 @@ const app = express();
 // Modelos de datos
 const Vaca = require("./controller/vaca.controller");
 const port = 3000;
+const cors = require("cors");
 // conectandose a MONGODB
 const mongoose = require("mongoose");
 
@@ -15,6 +16,7 @@ mongoose
 
 // Middleware para procesar JSON
 app.use(express.json());
+app.use(cors());
 
 app.get("/vacas", Vaca.list);
 app.get("/vacas/desactivadas", Vaca.listDelete);

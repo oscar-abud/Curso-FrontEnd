@@ -6,7 +6,7 @@ const VacaShcema = mongoose.model("Vaca", {
   genre: { type: String, required: true, enum: ["F", "M"] },
   race: { type: String, required: true },
   location: { type: String, required: true },
-  sick: { type: String, required: true, default: null, maxlength: 150 },
+  sick: { type: String, default: null, maxlength: 150 },
   cowState: { type: Boolean, required: true, default: true },
 });
 

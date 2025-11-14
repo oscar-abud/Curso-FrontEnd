@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.contenedorVacas {
+  max-height: 55vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: auto;
+  padding: 5px;
+}
+
+.cow-card {
+  max-width: 500px;
+}

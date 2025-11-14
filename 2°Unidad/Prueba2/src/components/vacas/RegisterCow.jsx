@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function RegisterCow() {
-  const [diio, setDiio] = useState("");// EL Diio de este useState sirve para mostrar por pantalla la vaca guardada
+  const [diio, setDiio] = useState(""); // EL Diio de este useState sirve para mostrar por pantalla la vaca guardada
   const [values, setValues] = useState({
     diio: "",
     date: "",
@@ -155,8 +155,8 @@ export default function RegisterCow() {
             onBlur={handleBlur}
           >
             <option value="">Seleccione género</option>
-            <option value="m">Macho</option>
-            <option value="h">Hembra</option>
+            <option value="M">Macho</option>
+            <option value="F">Hembra</option>
           </select>
           {(touched.genre || submitted) && errors.genre && (
             <div className="invalid-feedback">{errors.genre}</div>

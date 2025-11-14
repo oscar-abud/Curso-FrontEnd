@@ -2,6 +2,8 @@ import React from "react";
 import "./pages.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Cows from "../components/vacas/Cows";
+import "../components/vacas/vacas.css";
 
 function Home() {
   return (
@@ -14,6 +16,12 @@ function Home() {
         <h1>
           Bienvenido <strong>administrador</strong>!
         </h1>
+        <div className="container">
+          <div>Menu con filtros</div>
+          <div className="contenedorVacas">
+            <Cows />
+          </div>
+        </div>
       </main>
       <Footer />
     </div>

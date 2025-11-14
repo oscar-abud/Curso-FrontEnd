@@ -2,7 +2,7 @@ import React from "react";
 import "./pages.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import RegisterCow from "../components/RegisterCow";
+import RegisterCow from "../components/vacas/RegisterCow";
 
 function VacaForm() {
   return (

@@ -2,12 +2,16 @@ import React from "react";
 import vacaImagen from "../../../public/cow-svgrepo-com.svg";
 import "./vacas.css";
 
-function CowCard({ cowDetail }) {
+function CowCard({ cowDetail, onDelete }) {
   const imgStyle = {
     maxWidth: "120px",
     borderRadius: "50%",
     border: "2px solid #d61719",
     padding: "5px",
+  };
+
+  const handleDeleteClick = () => {
+    onDelete && onDelete(cowDetail._id);
   };
 
   return (
@@ -19,10 +23,10 @@ function CowCard({ cowDetail }) {
         </div>
 
         {/* Contenido */}
-        <div className="text-md-start" style={{ minWidth: "466px" }}>
+        <div className="text-md-start w-100">
           <h5 className="card-title fw-bold">DIIO: {cowDetail.diio}</h5>
           <p className="card-text mb-1">
-            <span className="fw-bold">Fecha: </span>{" "}
+            <span className="fw-bold">Fecha: </span>
             {cowDetail.dateBirthday.slice(0, 10)}
           </p>
           <p className="card-text mb-1">
@@ -42,6 +46,13 @@ function CowCard({ cowDetail }) {
             </p>
           )}
         </div>
+      </div>
+      {/* Botones */}
+      <div className="d-flex flex-column flex-md-row gap-2 mt-3 mt-md-0 ms-md-auto">
+        <button className="btn btn-primary">Actualizar</button>
+        <button className="btn btn-danger" onClick={handleDeleteClick}>
+          Eliminar
+        </button>
       </div>
     </div>
   );
